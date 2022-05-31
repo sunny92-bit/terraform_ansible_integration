@@ -8,7 +8,7 @@ resource  "null_resource"  "ssh1" {
 	connection {
 	    type     = "ssh"
 	    user     = "ec2-user"
-	    private_key = file("C:/Users/AVINAVA/Downloads/terra_may.pem")
+	    private_key = file("C:/Users/AVINAVA/Downloads/defy.pem")
 	    host     = aws_instance.os1.public_ip
 	  }
 
@@ -41,7 +41,7 @@ resource  "null_resource"  "ssh2" {
 	connection {
 	    type     = "ssh"
 	    user     = "ec2-user"
-	    private_key = file("C:/Users/AVINAVA/Downloads/terra_may.pem")
+	    private_key = file("C:/Users/AVINAVA/Downloads/dde.pem")
 	    host     = aws_instance.os2.public_ip
 	  }
 
@@ -77,7 +77,7 @@ resource  "null_resource"  "ssh3" {
 	connection {
 	    type     = "ssh"
 	    user     = "ec2-user"
-	    private_key = file("C:/Users/AVINAVA/Downloads/kayak (2).pem")
+	    private_key = file("C:/Users/AVINAVA/Downloads/ssdree.pem")
 	    host     = var.ansible
 	  }
 
@@ -109,7 +109,7 @@ resource  "null_resource"  "ansible_ping" {
 	connection {
 	    type     = "ssh"
 	    user     = "ec2-user"
-	    private_key = file("C:/Users/AVINAVA/Downloads/kayak (2).pem")
+	    private_key = file("C:/Users/AVINAVA/Downloads/zzss.pem")
 	    host     = var.ansible
 	  }
 
